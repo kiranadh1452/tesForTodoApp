@@ -1,0 +1,20 @@
+{
+  "name": "todoapptest",
+  "version": "1.0.0",
+  "description": "Test scripts for a todo app",
+  "main": "cucumber.config.js",
+  "directories": {
+    "test": "tests"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^7.3.1",
+    "@cucumber/pretty-formatter": "^1.0.0-alpha.1",
+    "@playwright/test": "^1.17.1",
+    "playwright": "^1.17.1"
+  },
+  "scripts": {
+    "test": "cucumber-js --require cucumber.config.js --require tests/acceptance/stepDefinitions/**/*.js --format @cucumber/pretty-formatter"
+  },
+  "author": "Kiran Adhikari",
+  "license": "ISC"
+}
