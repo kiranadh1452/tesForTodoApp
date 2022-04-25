@@ -44,6 +44,6 @@ When('the user clicks on delete button', async function () {
 });
 
 Then("the user shouldn't see the deleted todo", async function () {
-
+  await todoHome.checkIfNode
 });
 
